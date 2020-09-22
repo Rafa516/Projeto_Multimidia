@@ -1,0 +1,335 @@
+<!doctype html>
+<html class="no-js" lang="pt-br">
+
+<head>
+	<!-- ESSE PROJETO FOI OTIMIZADO COM O FRAMEWORK ZURB FOUNDATION 6 -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Multimídia para Internet</title>
+	<link href="img/logo1.png" rel="icon">
+	<link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script type="text/javascript" src="js/funcoes.js"></script>
+</head>
+
+<body>
+	<!-- FOI ADICIONADO O TEMPLATE DO MODELO BLOG COM BARRA LATERAL COM ALGUNS BLOCOS DE CONSTRUÇÃO ESPECÍFICOS https://foundation.zurb.com/templates-previews-sites-f6-xy-grid/blog.html-->
+
+
+	<!-- CABEÇALHO -->
+	<!-- FOI ADICIONADO O BLOCO DE NAVEGAÇÃO OCULTA COM ALTERAÇÕES https://foundation.zurb.com/building-blocks/blocks/scrollhide-nav.html-->
+
+	<nav class="scrollhide-nav">
+
+		<ul class="dropdown menu" data-dropdown-menu>
+			<li>
+				<a class="a1" href="#">Utilidades</a>
+				<ul class="menu vertical">
+					<li><a class="a2" href="softwares.html">Softwares editores de vídeos/aúdio</a></li>
+					<li><a class="a2" href="ementa.html"> Ementa da Disciplina</a></li>
+				
+					<li><a class="a2" href="tutoriais.html">Tutoriais</a></li>
+					<li><a class="a2" href="ifb.html">Campus Brasília</a></li>
+
+				</ul>
+			<li>
+				<a class="a1" href="#">Instruções</a>
+				<ul class="menu vertical">
+					<li><a class="a2" href="azScreen.html">Como gravar a tela do Android</a></li>
+					<li><a class="a2" href="simpleScreen.html">Programa de captura de tela no Linux</a></li>
+					<li><a class="a2" href="pitivi.html">Usando o Pitivi no linux</a></li>
+				</ul>
+			</li>
+		<li><a class="a1" href="index.html">Início</a></li>
+		</ul>
+	</nav>
+
+	<!-- BANNER (header) -->
+	<div class="top-bar">
+		<header>
+			<center><a href="https://www.ifb.edu.br/" target="_blank"><img src="img/logo.png" width="300" /></a></center>
+			<center><h3><b>Tecnologia em Sistemas para Internet</h3></b></center>
+	</div>
+	</header>
+	</div>
+	<br><br>
+	<!-- ÍCONES LATERAIS FIXO -->
+	<!-- FOI ADICIONADO UMA BARRA SOCIAL FIXA COM ALTERAÇÕES https://foundation.zurb.com/building-blocks/blocks/sticky-social-bar.html-->
+	<div class="show-for-large">
+		<!--FOI ADICIONADO UMA CLASSE DE VISUALIZAÇÃO DENTRO DESSA DIV PARA ESSES ÍCONES LATERAIS FIXO APARECEREM SOMENTE EM TELA LARGA -->
+		<ul class="sticky-social-bar">
+		
+			<li class="social-icon">
+				<a href="https://www.youtube.com/results?search_query=editores+de+audio+e+video" target="_blank">
+					<i class="fa fa-youtube" aria-hidden="true"></i>
+					<span class="social-icon-text">Youtube</span>
+				</a>
+			</li>
+
+
+		</ul>
+	</div>
+
+	<!-- CONTEÚDO(ARTICLE) -->
+	<div class="row" id="content">
+		<div class="medium-8 columns">
+			<!--DIV COM ÍCONES SOCIAS IMPLEMENTADAS-->
+			<div class="show-for-small-only">
+				<!-- FOI ADICIONADO UMA CLASSE DE VISUALIZAÇÃO DENTRO DESSA DIV PARA ESSES ÍCONES APAREÇAM SOMENTE EM TELA PEQUENA -->
+			
+				<a href="https://www.youtube.com/results?search_query=editores+de+audio+e+video" target="_blank"><img
+						class="thumbnail" src="img/youtube.png" width="35" height="35"></a>
+			
+
+			</div>
+			<!--DIV COM ÍCONES SOCIAS IMPLEMENTADAS-->
+			<div class="show-for-medium-only">
+				<!-- FOI ADICIONADO UMA CLASSE DE VISUALIZAÇÃO DENTRO DESSA DIV PARA ESSES ÍCONES APAREÇAM SOMENTE EM TELA MÉDIA -->
+				
+				<a href="https://www.youtube.com/results?search_query=editores+de+audio+e+video" target="_blank"><img
+						class="thumbnail" src="img/youtube.png" width="35" height="35"></a>
+			
+
+
+			</div>
+
+			<script>Data()</script><br><br> <!-- SCRIPT COM A FUNÇÃO DA DATA -->
+			<div class="blog-post">
+
+				<h2><b>Programa de captura de tela no Linux: Simple Screen Recorder</small></h2></b>
+
+				<p><b>Passo 1:</b> Você pode baixar ou instalar o Simple Screen Recorder, de acordo com a sua distribuição linux, que pode ser observado na tabela abaixo.</p>
+
+
+				 <table class="table-bordered  table-hover" width="100%" cellspacing="0">
+
+                            <tr>
+                               
+                                <th>Arch Linux</th>
+                                <td>Basta instalar 'simplescreenrecorder':<br>
+								<i><b>sudo pacman -S simplescreenrecorder</i></b><br>
+								Adicione se quiser gravar aplicativos OpenGL de 32 bits em um sistema de 64 bits:<br>
+								<i><b>sudo pacman -S lib32-simplescreenrecorder</b></th></i>
+                            </td>
+                             <tr>
+                                <th>Debian</th>
+                                <td>Se você estiver usando o Debian 9 ou mais recente, você pode instalar o pacote 'simplescreenrecorder' dos repositórios oficiais. Você pode instalá-lo com:<br>
+
+								<b><i>sudo apt-get update</i></b><br>
+								<b><i>sudo apt-get install simplescreenrecorder</i></b><br>
+								Adicione se quiser gravar aplicativos OpenGL de 32 bits em um sistema de 64 bits:<br>
+
+								<b><i>sudo apt-get install simplescreenrecorder-lib: i386</i></b><br>
+								Você deve copiar e colar esses comandos em um terminal linha por linha, em vez de todos de uma vez, caso contrário, não funcionará.</td>
+                            </tr>
+                             <tr>
+                               
+                                <th>Fedora</th>
+                                <td>	
+								SimpleScreenRecorder está disponível no repositório RPM Fusion. O RPM Fusion pode ser ativado com este comando:<br>
+								<i><b>rpm -Uvh http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-stable.noarch.rpm</i></b><br>
+								Depois disso, SimpleScreenRecorder pode ser instalado com este comando:<br>
+								<i><b>dnf install simplescreenrecorder</b></td></i>
+                            </tr>
+                             <tr>
+                               
+                                <th>Gentoo</th>
+                                <td>SimpleScreenRecorder agora está incluído no repositório principal. Você pode instalá-lo com:<br>
+								<i><b>sudo emerge -av media-video / simplescreenrecorder</i></b><br></td>
+							</tr>
+							 <tr>
+                               
+                                <th>KaOS</th>
+                                <td>SimpleScreenRecorder está disponível no repositório oficial, o nome do pacote é 'simplescreenrecorder'.<br></td>
+								
+							</tr>
+							 <tr>
+                               
+                                <th>Mageia</th>
+                                <td>	
+								Instale <a href="http://madb.mageia.org/package/show/name/simplescreenrecorder" target="_blank">simplescreenrecorder</a> do repositório Core Release usando urpmi ou o Centro de Controle Mageia.<br>
+								</td>
+							</tr>
+							 <tr>
+                               
+                                <th>NixOS</th>
+                                <td>Você pode instalar SimpleScreenRecorder com o seguinte comando:<br>
+								<i><b>nix-env -i simplescreenrecorder</i></b><br>
+								O mesmo comando também deve funcionar em qualquer outra distribuição, desde que o gerenciador de pacotes Nix esteja instalado.</td>
+							</tr>
+							 <tr>
+                               
+                                <th>OpenSUSE</th>
+                                <td>Instale <a href="http://packman.links2linux.org/package/simplescreenrecorder" target="_blank">' simplescreenrecorder ' </a>do repositório Packman.<br> Se você deseja gravar aplicativos OpenGL de 32 bits em um sistema de 64 bits, você também deve instalar 'libssr-glinject-32bit'.<br> Este pacote foi criado por <a href="https://github.com/DAP-DarkneSS" target="_blank">Dmitriy (DAP-DarkneSS).</a><br>
+								</td>
+							</tr>
+							 <tr>
+                               
+                                <th>Red Hat Enterprise Linux ,
+									CentOS ,
+									Scientific Linux</th>
+                                <td>Os pacotes para SimpleScreenRecorder estão disponíveis nos <a href="https://li.nux.ro/repos.html" target="_blank">repositórios</a>  do <a href="https://li.nux.ro/repos.html" target="_blank">Nux. </a><br>
+								</td>
+							</tr>
+							 <tr>
+                               
+                                <th>Slackware</th>
+                                <td>Um SlackBuild está disponível <a href="http://slackbuilds.org/apps/ssr/" target="_blank">aqui.</a><br><br>
+								</td>
+							</tr>
+
+                            <tr>
+                               
+                                <th>Ubuntu ,
+								Linux Mint ,
+								...</th>
+                                <td>Se você estiver usando o Ubuntu 17.04 ou mais recente, SimpleScreenRecorder pode ser encontrado nos repositórios oficiais. Você pode instalá-lo com:<br>
+								<i><b>sudo apt-get update</i></b><br>
+								<i><b>sudo apt-get install simplescreenrecorder</i></b><br>
+								Você deve copiar e colar esses comandos em um terminal <b><i><u>linha por linha</u></i></b>, em vez de todos de uma vez, caso contrário, não funcionará.<br>
+								Adicione se quiser gravar aplicativos OpenGL de 32 bits em um sistema de 64 bits:<br>
+								<i><b>sudo apt-get install simplescreenrecorder-lib: i386</b></i><br>
+								Se você estiver usando uma versão mais antiga do Ubuntu ou quiser obter a versão mais recente do SimpleScreenRecorder imediatamente, sem esperar pelo próximo lançamento do Ubuntu, você também pode obter o (s) pacote (s) no <a href="https://launchpad.net/~maarten-baert/+archive/ubuntu/simplescreenrecorder" target="_blank">SimpleScreenRecorder PPA:</a><br> 
+								<i><b>sudo apt-add-repository ppa: maarten-baert / simplescreenrecorder</i></b><br>
+								<i><b>sudo apt-get update</i></b><br>
+								<i><b>sudo apt-get install simplescreenrecorder</i></b><br>
+								Adicione se quiser gravar aplicativos OpenGL de 32 bits em um sistema de 64 bits:
+								<i><b>sudo apt-get install simplescreenrecorder-lib: i386</i></b><br>
+                            </td>
+                             <tr>
+                               
+                                <th>Outras distribuições Linux</th>
+                                <td>	
+								Para todas as outras distribuições, você deve compilá-lo por enquanto. Não é tão difícil e há instruções no arquivo leia-me. Você pode encontrar o código-fonte no GitHub:<br>
+								<a href="https://github.com/MaartenBaert/ssr" target="_blank">https://github.com/MaartenBaert/ssr</a><br> 
+								Se você não estiver familiarizado com o git e quiser apenas um arquivo .tar.gz, baixe este:<br>
+								<a href="https://github.com/ MaartenBaert / ssr / archive / master.tar.gz" target="_blank">https://github.com/ MaartenBaert / ssr / archive / master.tar.gz</a><br> 
+                            </tr>
+
+                        </table>
+
+				<p><b>Passo 2:</b> Digite os comando no terminal da sua distro, no caso a meu e o Ubuntu.</p>
+
+
+						<img src="img/terminal.png" width="1000" height=""><br><br>
+						<img src="img/terminal1.png" width="1000" height=""><br><br>
+
+				<p><b>Passo 3:</b> Após a instalação pesquise por SimpleScreen e abrirá uma simples tela inicial como a da foto abaixo.</b><p>
+					<img src="img/simple.png" width="1000" height=""><br><br>
+					<img src="img/simple1.png" width="1000" height=""><br><br>
+
+
+				<p><b>Pronto!</b> O próximo passo e ajustar as configurações, assista o vídeo abaixo onde eu explico como configurar.<p>
+
+				<h3><b>Vídeo explicativo </small></h3></b><br>
+
+			<object controls="controls" type='application/x-shockwave-flash' style='width:770px; height:450px;' data='https://www.youtube.com/v/LsVYr00Xrz8'>
+			<param name='movie' value='https://www.youtube.com/v/LsVYr00Xrz8' />
+			</object>
+			
+				
+
+				<div class="callout">
+					<ul class="menu simple">
+						<li>Autor: Rafael Oliveira</li>
+					</ul>
+				</div><br><br><br><br>
+				
+				<div class="callout">
+					<ul class="menu simple">
+						<li><a href="index.html">Página Inicial </a></li>
+
+					</ul>
+				</div>
+			</div>
+			
+
+		</div>
+
+		<!-- COLUNA LATERAL (ASIDE) -->
+			<div class="medium-3 columns" data-sticky-container>
+			<div class="sticky" data-sticky data-anchor="content">
+				<h4><b>&emsp;&emsp;&emsp;Utilidades
+
+				</b></h4>
+				<ul>
+
+					<a href="softwares.html"><img class="thumbnail" src="img/softwares.png" width="250"
+						height="200"></a>
+				<a href="ementa.html"><img class="thumbnail" src="img/ementa.png" width="250" height="200"></a>
+			
+				<a href="tutoriais.html"><img class="thumbnail" src="img/tutoriais.png" width="250"
+						height="200"></a>
+				<a href="ifb.html"><img class="thumbnail" src="img/ifb.png" width="250" height="200"></a>
+
+
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- COLUNA LATERAL (ASIDE) -->
+	<br>
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+	<script>
+		$(document).foundation();
+	</script>
+	<hr>
+	<br>
+	<!--DIV COM ÍCONES SOCIAS IMPLEMENTADAS-->
+	<div class="show-for-small-only">
+		<!-- FOI ADICIONADO UMA CLASSE DE VISUALIZAÇÃO DENTRO DESSA DIV PARA ESSES ÍCONES APAREÇAM SOMENTE EM TELA PEQUENA NO FOOTER -->
+
+		<a href="https://www.youtube.com/results?search_query=editores+de+audio+e+video" target="_blank"><img
+			class="thumbnail" src="img/youtube.png" width="35" height="35"></a>
+
+
+
+	</div>
+	<!-- FOI ADICIONADO O BLOCO RODAPÉ DA COLUNA COM FORMULÁRIO DE CONTATO COM ALTERAÇÕES  https://foundation.zurb.com/building-blocks/blocks/3-column-footer-contact-form.html-->
+	<div id="contato" class="three-column-footer-contact-form-container">
+			<footer class="three-column-footer-contact-form" data-equalizer data-equalize-by-row="true">
+
+
+			<div class="footer-left" data-equalizer-watch>
+				<br><br>
+				
+						<a href="https://www.ifb.edu.br/" target="_blank" ><img src="img/logo2.png" width="100" height="50"></a>
+					
+						
+						
+				
+			</div>
+			<div class="footer-center" data-equalizer-watch>
+				<div class="baseline">
+					<div class="newsletter">
+						<br><br>
+						<center>
+					<p><a href="#" class="a1"><i ></i> Desenvolvido por Rafael
+								Oliveira</a></p></p>
+						</center>
+						
+					</div>
+				</div>
+			</div>
+			<div class="footer-right" data-equalizer-watch>
+				
+				<div class="baseline">
+					<br><br>
+
+					<a href="#" ><img src="img/topo.png" width="25" height="30"></a>
+					<p><i>Topo</i></p>			
+
+				</div>
+			</div>
+		
+		</footer>
+</body>
+
+</html>
+
+
+git remote add origin https://github.com/Rafa516/sssss.git
+git push -u origin master
