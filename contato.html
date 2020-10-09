@@ -11,6 +11,93 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
 	<script type="text/javascript" src="js/funcoes.js"></script>
+	<style type="text/css">
+		.card-user-container {
+			margin-bottom: 1rem;
+			background-color: #fefefe;
+			color: #0a0a0a;
+			overflow: hidden;
+			padding: 0;
+			border-radius: 0;
+		}
+
+		.card-user-container .card-user-avatar .user-image {
+			display: block;
+			margin: auto;
+			border-radius: 50%;
+			width: 11.875rem;
+			height: 11.875rem;
+			padding: 0.9375rem;
+		}
+
+		.card-user-container .card-user-avatar .user-image:hover {
+			-webkit-transform: scale(1.1);
+			-ms-transform: scale(1.1);
+			transform: scale(1.1);
+		}
+
+		.card-user-container .card-user-bio {
+			padding: 1rem;
+			text-align: center;
+		}
+
+		.card-user-container .card-user-bio .location {
+			display: inline-block;
+			margin: 0 0.9375rem;
+			color: #767676;
+			font-size: 0.875rem;
+		}
+
+		.card-user-container .card-user-bio .location-icon,
+		.card-user-container .card-user-bio .location-text {
+			display: inline-block;
+			padding: 0 0.3125rem;
+		}
+
+		.card-user-container .card-user-social {
+			background: #298A08;
+			padding: 1rem;
+			text-align: center;
+		}
+
+		.card-user-container .card-user-social ul {
+			display: inline-block;
+		}
+
+		.card-user-container .card-user-social ul li {
+			margin: 0 10px;
+			font-size: 1.2em;
+			cursor: pointer;
+		}
+
+		.card-user-container .card-user-social ul li:hover {
+			-webkit-transform: scale(1.1);
+			-ms-transform: scale(1.1);
+			transform: scale(1.1);
+		}
+
+		.card-user-container .card-user-button {
+			text-align: center;
+			padding: 1rem;
+		}
+
+		.a3 {
+			color: white;
+		}
+
+		.a3:link,
+		.a3:visited {
+			color: white;
+
+		}
+
+		.a3:hover,
+		.a3:active {
+			font-weight: bold;
+			font-size: 1em;
+			color: #00BFFF;
+		}
+	</style>
 </head>
 
 <body>
@@ -19,7 +106,8 @@
 
 	<!-- CABEÇALHO -->
 	<!-- FOI ADICIONADO O BLOCO DE NAVEGAÇÃO OCULTA COM ALTERAÇÕES https://foundation.zurb.com/building-blocks/blocks/scrollhide-nav.html-->
-<nav class="scrollhide-nav">
+
+	<nav class="scrollhide-nav">
 
 		<ul class="dropdown menu" data-dropdown-menu>
 			<li><a class="a1" href="index.html">Início</a></li>
@@ -90,37 +178,60 @@
 			<script>Data()</script><br><br> <!-- SCRIPT COM A FUNÇÃO DA DATA -->
 			<div class="blog-post">
 
-				<h2><b>Turorial para o uso do software Pitivi no linux</small></h2></b>
-
-				<p><b>Passo 1:</b>Para instalar o Piviti é bem simples voce pode ir nesse site <a href="http://www.pitivi.org/?go=download">http://www.pitivi.org/?go=download</a> ou pelo comando <b>sudo apt-get install pitivi</b> no Ubuntu, Linux Mint, Elementary OS e derivados</p> 
-
-				<p><b>Passo 2:</b> Após instalado pesquise pelo programa</p>
-				<img src="img/pitivi1.png" width="1000" height="500"><br><br>
-
-					
-
-				<p><b>Passo 3:</b>Ao executá-lo abrirá a seguinte tela <p>
-				<img src="img/pitivi2.png" width="1000" height="500"><br><br>
-
-				<p>Escolha a opção novo projeto e apararecerá a tela principal do pitivi</p>
-				<img src="img/pitivi3.png" width="1000" height="500"><br><br>
-			   <p><b>Pronto!</b> O próximo passo e como editar ou criar um novo projeto, assista o vídeo abaixo onde eu explico como realizar esses procedimentos.<p>
-
-				
-
-				<h3><b>Vídeo explicativo </small></h3></b><br>
-
-				<object type='application/x-shockwave-flash' style='width:750px; height:500px;' data='https://www.youtube.com/v/e3X2K6bW5bA'>
-					<param name='movie' value='https://www.youtube.com/v/e3X2K6bW5bA' />
-				</object>
-				
 
 				<div class="callout">
 					<ul class="menu simple">
-						<li>Autor: Rafael Oliveira</li>
+						<li>
+							<h3><b>Contato</b></h3>
+						</li>
 					</ul>
-				</div><br><br><br><br>
-				
+				</div>
+				<h5><b>Formação Acadêmica:</b></h5>
+				<p> • Cursou Técnico em Informática – Senac.<br>
+					• Cursou Engenharia de Software – UnB. (Interrompido 4° Semestre)<br>
+					• Cursando Tecnologia em Sistemas para Internet - IFB. (3° Semestre) <br>
+					
+				<h5><b>Atividades de Aperfeiçoamento:</b></h5>
+				• Conhecimento em programação e desenvolvimento de softwares e manutenção de computadores.<br>
+				• Sistema Operacional: Windows, Linux.<br>
+				• Programação em C,C#,PHP,JAVA e MySQL.<br>
+				• Desenvolvimento em HTML, CSS, JavaScript com apoio do Framework Angular, Bootstrap e VueJs <br>
+				• Desenvolvimento Mobile em Ionic.<br>
+
+				• Inglês Intermediário.<br>
+
+
+
+
+
+				</p>
+				<hr>
+
+				<div class="card-user-container">
+					<div class="card-user-avatar">
+						<img src="img/rafael.png" alt="" class="user-image">
+					</div>
+					<div class="card-user-bio">
+						<h4><b>Rafael Oliveira</b></h4>
+						<p> Apaixonado pelas diversas tecnologias e inovações. </p>
+						<p><i class="fa fa-phone fa-lg" aria-hidden="true"></i> (61) 9 9456-8017</p>
+						<span class="location"><span class="location-icon fa fa-map-marker"></span><span
+								class="location-text"><b>Brasilia - DF</b></span></span>
+					</div>
+					<div class="card-user-social">
+						<ul>
+							<a href="##" target="_blank" class="a3">
+								<li class="fa fa-facebook"></li>
+							</a>
+							<a href="##" target="_blank" class="a3">
+								<li class="fa fa-instagram"></li>
+							</a>
+
+						</ul>
+					</div>
+				</div>
+				<hr>
+
 				<div class="callout">
 					<ul class="menu simple">
 						<li><a href="index.html">Página Inicial </a></li>
@@ -128,11 +239,8 @@
 					</ul>
 				</div>
 			</div>
-			
-
 		</div>
-
-		<!-- COLUNA LATERAL (ASIDE) -->
+	<!-- COLUNA LATERAL (ASIDE) -->
 			<div class="medium-3 columns" data-sticky-container>
 			<div class="sticky" data-sticky data-anchor="content">
 				<h4><b>&emsp;&emsp;&emsp;Utilidades
@@ -153,6 +261,7 @@
 			</div>
 		</div>
 	</div>
+
 	<!-- COLUNA LATERAL (ASIDE) -->
 	<br>
 
